@@ -26,10 +26,9 @@ jobs:
           java-version: '21'
       - name: Build Project
         run: mvn clean install -DskipTests
-      - name: Copy jar
-        run: mkdir staging && cp target/*.jar staging
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: userbook-maven-0.0.1-SNAPSHOT.jar
-          path: staging
+          path: target/userbook-maven-0.0.1-SNAPSHOT.jar
+          compression-level: 0 # no compression
