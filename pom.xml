@@ -88,7 +88,8 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
-				</configuration>
+                    <imageName>ismaelgueyetraining/${project.name}:${project.version}</imageName>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
