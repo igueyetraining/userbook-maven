@@ -23,4 +23,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: target/userbook-maven-0.0.1-SNAPSHOT.jar
+          path: build/libs/userbook-maven-0.0.1-SNAPSHOT.jar
