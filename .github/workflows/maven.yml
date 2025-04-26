@@ -31,5 +31,5 @@ jobs:
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
-          name: artifact
+          name: userbook-maven-0.0.1-SNAPSHOT.jar
           path: staging
