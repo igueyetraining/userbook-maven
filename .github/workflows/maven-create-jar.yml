@@ -24,8 +24,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
+      - name: Change wrapper permissions
+        run: chmod +x ./mvnw
       - name: Build Project
-        run: mvn clean install -DskipTests
+        run: ./mvnw clean package
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
