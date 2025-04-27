@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.hk.prj</groupId>
 	<artifactId>userbook-maven</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>userbook-maven</name>
 	<description>user management using springboot</description>
 	<properties>
@@ -90,8 +90,16 @@
 					</excludes>
                     <imageName>ismaelgueyetraining/${project.name}:${project.version}</imageName>
                 </configuration>
+                <executions>
+			        <execution>
+			            <id>build-info</id>
+			            <goals>
+			                <goal>build-info</goal>
+			            </goals>
+			        </execution>
+			    </executions>
 			</plugin>
 		</plugins>
 	</build>
-
+	
 </project>
