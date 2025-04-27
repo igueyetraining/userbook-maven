@@ -32,5 +32,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: userbook-maven-JAR
-          path: target
+          path: target/*.jar
           compression-level: 0 # no compression
