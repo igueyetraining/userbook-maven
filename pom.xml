@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.hk.prj</groupId>
 	<artifactId>userbook-maven</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>userbook-maven</name>
 	<description>user management using springboot</description>
 	<properties>
